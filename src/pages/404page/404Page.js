@@ -1,7 +1,7 @@
 import React from "react";
 
-const MainPage = () => {
+const _404Page = () => {
   return <div></div>;
 };
 
-export default MainPage;
+export default _404Page;
