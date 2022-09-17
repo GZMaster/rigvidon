@@ -1,7 +1,7 @@
 .nav__component {
   position: fixed;
   display: flex;
-  width: 100%;
+  width: -webkit-fill-available;
   z-index: 5;
   top: 0%;
   height: 30px;
