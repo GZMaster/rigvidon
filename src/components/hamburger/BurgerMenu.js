@@ -41,7 +41,7 @@ const BurgerMenu = () => {
               activeclass="active"
               smooth={true}
               spy={true}
-              to="about"
+              to="about Us"
               offset={-60}
               onClick={handleClick}
             >
@@ -53,11 +53,11 @@ const BurgerMenu = () => {
               activeclass="active"
               smooth={true}
               spy={true}
-              to="services"
+              to="What we do"
               offset={-60}
               onClick={handleClick}
             >
-              Services
+              What we do
             </Link>
           </li>
           <li>
