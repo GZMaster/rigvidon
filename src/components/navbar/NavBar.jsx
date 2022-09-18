@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import BurgerMenu from "../hamburger/BurgerMenu";
 import UseMediaQuery from "../mediaquery/UseMediaQuerry";
 import logo from "../../assets/images/Rigvigon Logo.png";
@@ -17,39 +17,51 @@ const NavBar = () => {
 
       {isPageWide ? (
         <div className="links__content">
-          <NavLink
+          <Link
             className={selectPage === "Home" ? "links selected" : "links"}
-            to="/"
+            smooth={true}
+            spy={true}
+            to="home"
+            offset={-80}
             onClick={() => setSelectPage("Home")}
           >
             Home
-          </NavLink>
-          <NavLink
+          </Link>
+          <Link
             className={selectPage === "About Us" ? "links selected" : "links"}
-            to="/about Us"
+            smooth={true}
+            spy={true}
+            to="about"
+            offset={-80}
             onClick={() => setSelectPage("About Us")}
           >
             About Us
-          </NavLink>
-          <NavLink
-            className={selectPage === "What we do" ? "links selected" : "links"}
-            to="/What we do"
+          </Link>
+          <Link
+            className={selectPage === "What we do" ? "links selected" : "links"}          
+            smooth={true}
+            spy={true}
+            to="whatwedo"
+            offset={-80}
             onClick={() => setSelectPage("What we do")}
           >
             What we do
-          </NavLink>
+          </Link>
 
-          <NavLink
+          <Link
             className={
               selectPage === "Contact Us"
                 ? "links Contact-Link selected"
                 : "links Contact-Link"
             }
-            to="/contact Us"
+            smooth={true}
+            spy={true}
+            to="contact"
+            offset={-80}
             onClick={() => setSelectPage("Contact Us")}
           >
             Contact Us
-          </NavLink>
+          </Link>
         </div>
       ) : (
         <BurgerMenu />
