@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import "./Services.scss";
 import Card from "../../components/card/Card";
-import ServicesData from "../../Data/ServicesData";
+import ServicesData from "../../assets/data/ServicesData";
+import "./Services.scss";
 
 const Services = () => {
   const [cardData] = useState(ServicesData);
+
   return (
     <section id="services" className="S_Container">
       <div className="S_Wrapper">
@@ -17,7 +18,7 @@ const Services = () => {
           </p>
         </div>
         <div className="S_Right">
-          <Card items={cardData} />
+            <Card className="card_items" items={cardData} />
         </div>
       </div>
     </section>
