@@ -55,6 +55,14 @@
   margin-bottom: 1rem;
   font-size: 16px;
 }
+.S_Left_Button {
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.S_Right_Button {
+  border-style: none;
+  background-color: rgba(0, 0, 0, 0);
+}
 @media screen and (min-width: 769px) and (max-width: 1199px) {
   .S_Wrapper {
     margin: 0;

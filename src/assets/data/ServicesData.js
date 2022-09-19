@@ -29,11 +29,11 @@ const ServicesData = [
     image: "",
     text: "With us, you get it right the first time",
   },
-  {
-    id: 6,
-    title: "LARGE SCALE INSTALLATION AND MAINTENANCE OF SOLAR PANELS",
-    image: "",
-    text: "Need 100% solar powered capacity? We’ve got you covered.",
-  },
+  // {
+  //   id: 6,
+  //   title: "LARGE SCALE INSTALLATION AND MAINTENANCE OF SOLAR PANELS",
+  //   image: "",
+  //   text: "Need 100% solar powered capacity? We’ve got you covered.",
+  // },
 ];
 export default ServicesData;
