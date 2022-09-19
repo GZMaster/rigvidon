@@ -1,7 +1,8 @@
 import React from "react";
 import Home from "./home/Home";
-import About from "./about/About";
-import Services from "./services/Services";
+import About from "./About/About";
+import Services from "./Services/Services";
+import Contact from "./contact/Contact";
 
 const MainPage = () => {
   return (
@@ -9,6 +10,7 @@ const MainPage = () => {
       <Home />
       <About />
       <Services />
+      <Contact />
     </div>
   );
 };
