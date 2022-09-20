@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { send } from "emailjs-com";
 import "./Contact.scss";
-import "../Services/Services.scss";
+// import "../Services/Services.scss";
 import { MdEmail, MdPhoneInTalk, MdLocationPin } from "react-icons/md";
 import SuccessfulNotification from "../../components/notification/SuccessfulNotification";
 

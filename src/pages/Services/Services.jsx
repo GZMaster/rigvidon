@@ -6,12 +6,31 @@ import "./Services.scss";
 
 const Services = () => {
   const [cardData] = useState(ServicesData);
+  const {pageIndex, setPageIndex} = useState(0)
+
+  const sideScroll = (element, direction, speed, distance, step) => {
+    let scrollAmount = 0;
+    var slideTimer = setInterval(function () {
+      if (direction === 'left' && pageIndex >= 0) {
+        element.scrollLeft -= step;
+        setPageIndex(pageIndex - 1)
+      } 
+      if (direction === 'right' && pageIndex <= 5) {
+        element.scrollLeft += step;
+        setPageIndex(pageIndex + 1)
+      }
+      scrollAmount += step;
+      if (scrollAmount >= distance) {
+        window.clearInterval(slideTimer);
+      }
+    }, speed);
+  }
 
   return (
     <section id="services" className="S_Container">
       <div className="S_Wrapper">
         <div className="S_Left">
-          
+
         </div>
 
         <div className="S_Right">
@@ -24,40 +43,25 @@ const Services = () => {
           </p>
 
           <div className="servives_holder">
-            <button className="S_Left_Button" onClick={() => sideScroll(document.getElementById('services_card'),'left',25,200,10)}><AiOutlineArrowLeft /></button>
+            <button className="S_Left_Button" onClick={sideScroll(document.getElementById('services_card'), 'left', 25, 200, 10)}><AiOutlineArrowLeft /></button>
             <div className="services_card" id="services_card">
               <Card items={cardData} />
             </div>
-            <button className="S_Right_Button" onClick={() => sideScroll(document.getElementById('services_card'),'right',25,200,10)}><AiOutlineArrowRight /></button>
+            <button className="S_Right_Button" onClick={sideScroll(document.getElementById('services_card'), 'right', 25, 200, 10)}><AiOutlineArrowRight /></button>
           </div>
 
           <div class="pagination">
-            <span class="active"></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class={pageIndex === 0 ? "active" : ""}></span>
+            <span class={pageIndex === 1 ? "active" : ""}></span>
+            <span class={pageIndex === 2 ? "active" : ""}></span>
+            <span class={pageIndex === 3 ? "active" : ""}></span>
+            <span class={pageIndex === 4 ? "active" : ""}></span>
+            <span class={pageIndex === 5 ? "active" : ""}></span>
           </div>
         </div>
       </div>
     </section>
   );
 };
-
-function sideScroll(element,direction,speed,distance,step){
-  let scrollAmount = 0;
-  var slideTimer = setInterval(function(){
-      if(direction === 'left'){
-          element.scrollLeft -= step;
-      } else {
-          element.scrollLeft += step;
-      }
-      scrollAmount += step;
-      if(scrollAmount >= distance){
-          window.clearInterval(slideTimer);
-      }
-  }, speed);
-}
 
 export default Services;
