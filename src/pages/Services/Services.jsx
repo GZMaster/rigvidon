@@ -6,16 +6,16 @@ import "./Services.scss";
 
 const Services = () => {
   const [cardData] = useState(ServicesData);
-  const {pageIndex, setPageIndex} = useState(0)
+  const [pageIndex, setPageIndex] = useState(0)
 
-  const sideScroll = (element, direction, speed, distance, step) => {
+  function sideScroll (element, direction, speed, distance, step) {
     let scrollAmount = 0;
     var slideTimer = setInterval(function () {
       if (direction === 'left' && pageIndex >= 0) {
         element.scrollLeft -= step;
         setPageIndex(pageIndex - 1)
       } 
-      if (direction === 'right' && pageIndex <= 5) {
+      if (direction === 'right' && pageIndex <= 3) {
         element.scrollLeft += step;
         setPageIndex(pageIndex + 1)
       }
@@ -25,6 +25,16 @@ const Services = () => {
       }
     }, speed);
   }
+
+  // useEffect(() => {
+  //   if (pageIndex < 0) {
+  //     setPageIndex(0)
+  //   } else if (pageIndex > 3) {
+  //     setPageIndex(3)
+  //   }
+  //   setPageIndex(pageIndex)
+  // }, [pageIndex])
+
 
   return (
     <section id="services" className="S_Container">
@@ -43,11 +53,11 @@ const Services = () => {
           </p>
 
           <div className="servives_holder">
-            <button className="S_Left_Button" onClick={sideScroll(document.getElementById('services_card'), 'left', 25, 200, 10)}><AiOutlineArrowLeft /></button>
+            <button className="S_Left_Button" onClick={() => sideScroll(document.querySelector('.services_card'), 'left', 25, 200, 10)}><AiOutlineArrowLeft /></button>
             <div className="services_card" id="services_card">
               <Card items={cardData} />
             </div>
-            <button className="S_Right_Button" onClick={sideScroll(document.getElementById('services_card'), 'right', 25, 200, 10)}><AiOutlineArrowRight /></button>
+            <button className="S_Right_Button" onClick={() => sideScroll(document.querySelector('.services_card'), 'right', 25, 200, 10)}><AiOutlineArrowRight /></button>
           </div>
 
           <div class="pagination">
@@ -55,8 +65,6 @@ const Services = () => {
             <span class={pageIndex === 1 ? "active" : ""}></span>
             <span class={pageIndex === 2 ? "active" : ""}></span>
             <span class={pageIndex === 3 ? "active" : ""}></span>
-            <span class={pageIndex === 4 ? "active" : ""}></span>
-            <span class={pageIndex === 5 ? "active" : ""}></span>
           </div>
         </div>
       </div>

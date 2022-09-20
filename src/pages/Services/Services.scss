@@ -32,6 +32,7 @@
   flex-direction: row;
   height: 520px;
   justify-content: center;
+  align-items: center;
 }
 
 .services_card {
@@ -95,10 +96,14 @@
 }
 .S_Left_Button {
   border-style: none;
+  height: 24px;
+  outline: none;
   background-color: rgba(0, 0, 0, 0);
 }
 .S_Right_Button {
   border-style: none;
+  height: 24px;
+  outline: none;
   background-color: rgba(0, 0, 0, 0);
 }
 @media screen and (min-width: 769px) and (max-width: 1199px) {
