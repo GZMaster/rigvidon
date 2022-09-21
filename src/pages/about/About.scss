@@ -30,6 +30,7 @@
 .A_Text_Header {
   font-weight: bold;
   font-size: 40px;
+  margin: 0;
   line-height: 45px;
 }
 .A_Btn {
@@ -61,11 +62,9 @@
   text-align: start;
   letter-spacing: 2.5px;
 }
-.A_Orange {
-  color: #f96507;
-}
-.A_Blue {
-  color: #000098;
+
+.A_Green {
+  color: #a4cf39;
 }
 .A_Text_Wrap p {
   text-align: justify;
