@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Card from "../../components/card/Card";
 import ServicesData from "../../assets/data/ServicesData";
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai'
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+import valueIcon1 from '../../assets/images/eyes 1Icon.png';
+import valueIcon2 from '../../assets/images/Efficiency Icon.png';
 import "./Services.scss";
 
 const Services = () => {
@@ -32,25 +34,25 @@ const Services = () => {
         <div className="S_Left">
           <div className="S_title">
             <h2>WHAT WE DO</h2>
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+            <h1>WE PROVIDE A BARRAGE OF ENERGY RELATED SERVICES</h1>
             <p>Below are some benefits of working with us and the services we offer</p>
           </div>
-          <ul className="s_values">
-            <li>
-              <span className="values_icon">1</span>
-              <span className="values_text">
-                <h3>Quality</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, similique.</p>
-              </span>
-            </li>
-            <li>
-              <span className="values_icon">2</span>
-              <span className="values_text">
-                <h3>Quality</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, similique.</p>
-              </span>
-            </li>
-          </ul>
+          <div className="s_values">
+            <div>
+              <div className="values_icon"><img src={valueIcon1} alt="" /></div>
+              <div className="values_text">
+                <h3>Transparency</h3>
+                <p>We ensure 100% transparency</p>
+              </div>
+            </div>
+            <div>
+              <div className="values_icon"><img src={valueIcon2} alt="" /></div>
+              <div className="values_text">
+                <h3>Experience & Efficiency</h3>
+                <p>We are equipped with a team of highly efficient and experienced personnels</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="S_Right">

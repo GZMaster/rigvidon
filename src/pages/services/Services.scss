@@ -12,72 +12,117 @@
   margin: 0px 120px;
 }
 .S_Left {
-  flex: 1;
+  flex: 1 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  gap: 10px;
+  gap: 8px;
+  justify-content: flex-start;
 }
 
 .S_title {
-
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 45px;
+  display: grid;
+  gap: 8px;
 
   > h2 {
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 45px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+    letter-spacing: 0.12em;
+
+    color: #000000;
   }
 
   > h1 {
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 45px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #000000;
   }
 
   > p {
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 45px;
+    margin: 0;
+    padding: 2rem 0rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+
+    color: rgba(0, 0, 0, 0.75);
   }
 
 }
 
 .s_values {
   display: grid;
+  gap: 10px;
+  margin: 0;
+  padding: 2rem 0rem;
+  padding-left: 2.5rem;
+  background-repeat: no-repeat;
+  background-size: 4px;
+  background-image: url("../../assets/images/Electric Circuitvalues.png");
+  background-position: left;
 
-  > li {
+  > div {
     display: flex;
-    flex-direction: row;
-    // align-content: center;
-    align-items: flex-start;
+    height: fit-content;
+    align-items: center;
     justify-content: flex-start;
+    border: 1px solid #A4CF39;
   }
 
   .values_icon {
-    width: 1rem;
-    height: 1rem;
+    height: 100%;
     background: #A4CF39;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
 
-    flex: none;
-    order: 0;
-    flex-grow: 0;
+    > img {
+      width: 34px;
+      height: 34px;
+    }
   }
 
   .values_text {
+    height: 100%;
     
     > h3 {
-      font-weight: 300;
-      font-size: 20px;
-      line-height: 23.48px;
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 140%;
+      color: #000000;
+      margin: 0;
+      padding: 0 1rem;
     }
 
     > p {
-      font-weight: 300;
-      font-size: 20px;
-      line-height: 23.48px;
+      font-family: 'Montserrat';
+      font-style: normal; 
+      font-weight: 500;
+      font-size: 0.8rem;
+      line-height: 140%;
+      color: rgba(0, 0, 0, 0.7);
+      margin: 0;
+      padding: 0 1rem;
+
     }
   }
 
