@@ -18,11 +18,24 @@
   font-size: 1.1rem;
   border: none;
   cursor: pointer;
-  bottom: 5vh;
-  left: 40vw;
   margin: auto;
-  position: absolute;
   background-color: #a5cf39dc;
+}
+.Home_Svg {
+  padding: 1rem;
+  color: #a5cf39;
+  background-color: black;
+  display: flex;
+}
+.Home_Svg svg {
+  align-self: center;
+  font-size: 20px;
+}
+.Home_Wrapper {
+  bottom: 5vh;
+  display: flex;
+  left: 40vw;
+  position: absolute;
 }
 .Home_btn:hover {
   background-color: #a5cf39;
@@ -31,10 +44,15 @@
   .Home_Page {
     position: relative;
   }
-  .Home_btn {
+  .Home_Wrapper {
     position: absolute;
     bottom: 2vh;
     left: 25vw;
+  }
+  .Home_Svg svg {
+    font-size: 1rem;
+  }
+  .Home_btn {
     font-size: 0.85rem;
   }
 }
