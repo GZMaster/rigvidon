@@ -1,37 +1,37 @@
 const ServicesData = [
   {
     id: 1,
-    title: "TRAINING",
+    title: "Specialized Training",
     image: "",
     text: "We offer specialized training services",
   },
   {
     id: 2,
-    title: "ENGINEERING AND AUTOMATION SUPPORT ",
+    title: "Automation Support",
     image: "",
     text: "We have you covered",
   },
   {
     id: 3,
-    title: "PROCESS ENGINEERING",
+    title: "Process Engineering",
     image: "",
     text: "Allow us manage your production processes ",
   },
   {
     id: 4,
-    title: "OIL AND GAS DRILLING",
+    title: "Oil & Gas Drilling",
     image: "",
     text: "We specialize in both onshore and off-shore drilling services ",
   },
   {
     id: 5,
-    title: "CONSULTANCY ",
+    title: "Consultancy",
     image: "",
     text: "With us, you get it right the first time",
   },
   {
     id: 6,
-    title: "INSTALLATION AND MAINTENANCE OF SOLAR PANELS",
+    title: "Solar Panel Installations",
     image: "",
     text: "Need 100% solar powered capacity? We’ve got you covered.",
   },
