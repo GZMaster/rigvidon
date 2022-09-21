@@ -1,11 +1,12 @@
 .S_Container {
   height: auto;
-  background-color: #fdfdfe;
+  background-color: #f7f7f7;
 }
 .S_Wrapper {
   padding: 4rem 0rem;
   padding-top: 0;
   display: flex;
+  flex-direction: row;
   gap: 10px;
   justify-content: space-evenly;
   margin: 0px 120px;
@@ -17,9 +18,56 @@
   justify-content: space-evenly;
   gap: 10px;
 }
+
 .S_Right {
-  flex: 1;
-  overflow-x: scroll;
+  display: flex;
+  flex-direction: column;
+  width: 620px;
+  scroll-snap-align: start;
+  overflow-y: hidden;
+}
+
+.servives_holder{
+  display: flex;
+  flex-direction: row;
+  height: 520px;
+  justify-content: center;
+  align-items: center;
+}
+
+.services_card {
+  width: 100%;
+  flex-direction: row;
+  overflow: hidden;
+  scroll-snap-type: x mandatory;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+.pagination span{
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #CCCCCC;
+}
+.pagination span.active{
+  background: #00A654;
+}
+.pagination span:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border-radius: 50%;
 }
 
 .S_Top {
@@ -45,6 +93,18 @@
   width: 60%;
   margin-bottom: 1rem;
   font-size: 16px;
+}
+.S_Left_Button {
+  border-style: none;
+  height: 24px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+.S_Right_Button {
+  border-style: none;
+  height: 24px;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0);
 }
 @media screen and (min-width: 769px) and (max-width: 1199px) {
   .S_Wrapper {

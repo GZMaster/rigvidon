@@ -17,8 +17,10 @@ const Card = ({ items, cardClassWrapper, cardClass }) => {
                 <img src={BlackImage} alt={"Black"} />
               )}
             </div>
-            <h6>{title}</h6>
-            <p>{text}</p>
+            <div className="Card_Details">
+              <h6>{title}</h6>
+              <p>{text}</p>
+            </div>
           </article>
         );
       })}

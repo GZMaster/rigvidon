@@ -1,11 +1,12 @@
-.Hero_Page {
+.Home_Page {
   background-image: url("../../assets/images/Compressed Hero Image.png");
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 75vh;
+  background-size: cover;
   width: 100vw;
   position: relative;
 }
-.Hero_btn {
+.Home_btn {
   text-transform: capitalize;
   background: rgba(255, 124, 37, 0.8235294118);
   color: black;
@@ -22,14 +23,14 @@
   background-color: #a5cf39;
 }
 @media screen and (max-width: 468px) {
-  .Hero_Page {
+  .Home_Page {
     background-image: url("../../assets/images/Mobile Compressed Hero Image.png");
     width: 100vw;
     height: 40vh;
     background-position: center;
     background-size: cover;
   }
-  .Hero_btn {
+  .Home_btn {
     bottom: 5vh;
     font-size: 1rem;
   }
