@@ -34,7 +34,22 @@ const Services = () => {
             <h2>WHAT WE DO</h2>
             <p>Below are some benefits of working with us and the services we offer</p>
           </div>
-          <div className="s_values"></div>
+          <ul className="s_values">
+            <li>
+              <span>1</span>
+              <span>
+                <h3>Quality</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, similique.</p>
+              </span>
+            </li>
+            <li>
+              <span>2</span>
+              <span>
+                <h3>Quality</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, similique.</p>
+              </span>
+            </li>
+          </ul>
         </div>
 
         <div className="S_Right">

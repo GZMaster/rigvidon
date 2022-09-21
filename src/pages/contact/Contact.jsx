@@ -10,7 +10,7 @@ const Contact = () => {
     from_name: "",
     to_name: "Bralewood",
     message: "",
-    reply_to: "info@bralewood.com",
+    reply_to: "retrodevstechnology@gmail.com",
     from_email: "",
     subject: "",
   });
