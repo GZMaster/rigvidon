@@ -7,7 +7,7 @@ import "./NavBar.scss";
 
 const NavBar = () => {
   const [selectPage, setSelectPage] = useState("Home");
-  let isPageWide = UseMediaQuery("(min-width: 860px)");
+  let isPageWide = UseMediaQuery("(min-width: 768px)");
 
   return (
     <div className="nav__component">
@@ -38,7 +38,7 @@ const NavBar = () => {
             About Us
           </Link>
           <Link
-            className={selectPage === "What we do" ? "links selected" : "links"}          
+            className={selectPage === "What we do" ? "links selected" : "links"}
             smooth={true}
             spy={true}
             to="whatwedo"

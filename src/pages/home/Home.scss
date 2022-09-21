@@ -1,11 +1,12 @@
 .Home_Page {
-  background-image: url("../../assets/images/Compressed Hero Image.png");
-  background-repeat: no-repeat;
-  height: 75vh;
-  background-size: cover;
-  width: 100vw;
   position: relative;
 }
+.hero_image {
+  position: relative;
+  object-fit: contain;
+  width: -webkit-fill-available;
+}
+
 .Home_btn {
   text-transform: capitalize;
   background: rgba(255, 124, 37, 0.8235294118);
@@ -17,21 +18,23 @@
   font-size: 1.1rem;
   border: none;
   cursor: pointer;
-  bottom: 8vh;
+  bottom: 5vh;
+  left: 40vw;
   margin: auto;
   position: absolute;
+  background-color: #a5cf39dc;
+}
+.Home_btn:hover {
   background-color: #a5cf39;
 }
 @media screen and (max-width: 468px) {
   .Home_Page {
-    background-image: url("../../assets/images/Mobile Compressed Hero Image.png");
-    width: 100vw;
-    height: 40vh;
-    background-position: center;
-    background-size: cover;
+    position: relative;
   }
   .Home_btn {
-    bottom: 5vh;
-    font-size: 1rem;
+    position: absolute;
+    bottom: 2vh;
+    left: 25vw;
+    font-size: 0.85rem;
   }
 }
