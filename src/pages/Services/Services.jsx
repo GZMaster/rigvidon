@@ -15,7 +15,7 @@ const Services = () => {
         element.scrollLeft -= step;
         setPageIndex(pageIndex - 1)
       } 
-      if (direction === 'right' && pageIndex <= 3) {
+      if (direction === 'right' && pageIndex <= 5) {
         element.scrollLeft += step;
         setPageIndex(pageIndex + 1)
       }
@@ -32,19 +32,20 @@ const Services = () => {
         <div className="S_Left">
           <div className="S_title">
             <h2>WHAT WE DO</h2>
+            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
             <p>Below are some benefits of working with us and the services we offer</p>
           </div>
           <ul className="s_values">
             <li>
-              <span>1</span>
-              <span>
+              <span className="values_icon">1</span>
+              <span className="values_text">
                 <h3>Quality</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, similique.</p>
               </span>
             </li>
             <li>
-              <span>2</span>
-              <span>
+              <span className="values_icon">2</span>
+              <span className="values_text">
                 <h3>Quality</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, similique.</p>
               </span>
@@ -62,11 +63,11 @@ const Services = () => {
           </p>
 
           <div className="servives_holder">
-            <button className="S_Left_Button" onClick={() => sideScroll(document.querySelector('.services_card'), 'left', 25, 200, 10)}><AiOutlineArrowLeft /></button>
+            <button className="S_Left_Button" onClick={() => sideScroll(document.querySelector('.services_card'), 'left', 25, 250, 10)}><AiOutlineArrowLeft /></button>
             <div className="services_card" id="services_card">
-              <Card items={cardData} />
+              <Card className="cards" items={cardData} />
             </div>
-            <button className="S_Right_Button" onClick={() => sideScroll(document.querySelector('.services_card'), 'right', 25, 200, 10)}><AiOutlineArrowRight /></button>
+            <button className="S_Right_Button" onClick={() => sideScroll(document.querySelector('.services_card'), 'right', 25, 230, 10)}><AiOutlineArrowRight /></button>
           </div>
 
           <div class="pagination">
@@ -74,6 +75,8 @@ const Services = () => {
             <span class={pageIndex === 1 ? "active" : ""}></span>
             <span class={pageIndex === 2 ? "active" : ""}></span>
             <span class={pageIndex === 3 ? "active" : ""}></span>
+            <span class={pageIndex === 4 ? "active" : ""}></span>
+            <span class={pageIndex === 5 ? "active" : ""}></span>
           </div>
         </div>
       </div>

@@ -19,6 +19,70 @@
   gap: 10px;
 }
 
+.S_title {
+
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 45px;
+
+  > h2 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  > h1 {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  > p {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+}
+
+.s_values {
+  display: grid;
+
+  > li {
+    display: flex;
+    flex-direction: row;
+    // align-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .values_icon {
+    width: 1rem;
+    height: 1rem;
+    background: #A4CF39;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .values_text {
+    
+    > h3 {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 23.48px;
+    }
+
+    > p {
+      font-weight: 300;
+      font-size: 20px;
+      line-height: 23.48px;
+    }
+  }
+
+}
+
 .S_Right {
   display: flex;
   flex-direction: column;
