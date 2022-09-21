@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.scss";
-import { FaFacebookF, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="Footer">
@@ -25,7 +25,7 @@ const Footer = () => {
           target={"_blank"}
           rel="noreferrer"
         >
-          <FaLinkedin />
+          <FaTwitter />
         </a>
         <a
           href="https://www.instagram.com/bralewoodinvestments/"

@@ -19,7 +19,7 @@
     color: #000015cc;
     background-color: #fff;
     min-width: 265px;
-  
+
     .Card_Image {
       width: 100%;
 
@@ -31,7 +31,7 @@
 
     .Card_Details {
       width: 100%;
-      padding: 0 0.3rem ;
+      padding: 0 0.3rem;
       text-align: center;
 
       > h6 {
@@ -47,8 +47,6 @@
         line-height: 20px;
       }
     }
-  
-    
   }
   .Card:hover {
     transform: scale(1.05);
@@ -57,11 +55,6 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 }
-
-
-
-
-
 
 @media screen and (min-width: 769px) and (max-width: 1199px) {
   .Card_Wrapper {
