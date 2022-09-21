@@ -26,21 +26,15 @@ const Services = () => {
     }, speed);
   }
 
-  // useEffect(() => {
-  //   if (pageIndex < 0) {
-  //     setPageIndex(0)
-  //   } else if (pageIndex > 3) {
-  //     setPageIndex(3)
-  //   }
-  //   setPageIndex(pageIndex)
-  // }, [pageIndex])
-
-
   return (
     <section id="services" className="S_Container">
       <div className="S_Wrapper">
         <div className="S_Left">
-
+          <div className="S_title">
+            <h2>WHAT WE DO</h2>
+            <p>Below are some benefits of working with us and the services we offer</p>
+          </div>
+          <div className="s_values"></div>
         </div>
 
         <div className="S_Right">
