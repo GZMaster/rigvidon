@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Card from "../../components/card/Card";
 import ServicesData from "../../assets/data/ServicesData";
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai'
+import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+import valueIcon1 from '../../assets/images/eyes 1Icon.png';
+import valueIcon2 from '../../assets/images/Efficiency Icon.png';
 import "./Services.scss";
 
 const Services = () => {
@@ -37,14 +39,14 @@ const Services = () => {
           </div>
           <ul className="s_values">
             <li>
-              <span className="values_icon">1</span>
+              <span className="values_icon"><valueIcon1 /></span>
               <span className="values_text">
                 <h3>Quality</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, similique.</p>
               </span>
             </li>
             <li>
-              <span className="values_icon">2</span>
+              <span className="values_icon"><valueIcon2 /></span>
               <span className="values_text">
                 <h3>Quality</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, similique.</p>
