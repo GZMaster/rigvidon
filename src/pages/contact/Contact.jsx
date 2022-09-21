@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { send } from "emailjs-com";
 import "./Contact.scss";
-import "../Services/Services.scss";
+// import "../Services/Services.scss";
 import { MdEmail, MdPhoneInTalk, MdLocationPin } from "react-icons/md";
 import SuccessfulNotification from "../../components/notification/SuccessfulNotification";
 
@@ -10,7 +10,7 @@ const Contact = () => {
     from_name: "",
     to_name: "Bralewood",
     message: "",
-    reply_to: "info@bralewood.com",
+    reply_to: "retrodevstechnology@gmail.com",
     from_email: "",
     subject: "",
   });
