@@ -85,7 +85,9 @@ const Contact = () => {
           </form>
           <div className="C_Info">
             <div className="C_item">
-              <MdLocationPin />
+              <div className="C_Svg">
+                <MdLocationPin />
+              </div>
               <div className="C_item_Wrap">
                 <h3 className="C_item_title">
                   <span>Our Address</span>
@@ -97,7 +99,9 @@ const Contact = () => {
               </div>
             </div>
             <div className="C_item">
-              <MdEmail />
+              <div className="C_Svg">
+                <MdEmail />
+              </div>
               <div className="C_item_Wrap">
                 <h3 className="C_item_title">
                   <span> Email Us</span>
@@ -106,7 +110,9 @@ const Contact = () => {
               </div>
             </div>
             <div className="C_item">
-              <MdPhoneInTalk />
+              <div className="C_Svg">
+                <MdPhoneInTalk />
+              </div>
               <div className="C_item_Wrap">
                 <h3 className="C_item_title">
                   <span>Call Us</span>
