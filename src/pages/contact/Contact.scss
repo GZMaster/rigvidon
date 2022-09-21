@@ -58,7 +58,7 @@
 .C_btn {
   text-transform: capitalize;
   background: #a5cf39ce;
-  color: white;
+  color: black;
   padding: 1rem 1.5rem;
   letter-spacing: 2px;
   display: inline-block;
@@ -98,14 +98,15 @@
   margin: 0;
   font-size: 18px;
   letter-spacing: 1.5px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 17px;
 }
-.C_item svg {
+.C_Svg {
   font-size: 45px;
   padding: 1rem;
   background-color: #a4cf39;
 }
+
 .C_item-text {
   font-size: 14px;
   margin: 0;
@@ -136,20 +137,17 @@
   .Contact_Wrapper {
     flex-direction: column-reverse;
   }
-  .C_title {
-    font-size: 24px;
-    line-height: 28px;
-  }
   .C_Text {
-    width: 100%;
-    font-size: 1rem;
-    line-height: 22px;
+    width: 90%;
+    font-size: 1.5rem;
   }
   .C_Info {
     text-align: left;
     justify-content: center;
     align-content: center;
-    padding: 0 0.5rem;
+    padding: 4rem;
+    margin: 0;
+    padding-right: 0;
     background-color: transparent;
     flex-direction: column;
   }
@@ -157,8 +155,8 @@
     margin-top: 0;
   }
   .C_item {
-    padding: 1rem;
     margin: 0 !important;
+    width: 75vw;
   }
   .C_item-text {
     align-self: center;
@@ -168,11 +166,11 @@
     line-height: 22px;
   }
   .C_Wrapper {
-    padding: 2rem 1rem;
+    padding: 0;
     width: 100%;
   }
   .C_btn {
-    width: fit-content;
+    width: fit-content !important;
     padding: 1rem 1.5rem;
   }
   .C_Container {
@@ -183,17 +181,27 @@
   .C_Form {
     padding: 0.5rem;
     margin: 0.5rem;
-    background-color: white;
+    background-color: transparent;
   }
   .C_Flex {
     flex-direction: column;
     gap: 0;
   }
+  .C_Svg {
+    font-size: 45px;
+    padding: 1rem;
+    display: flex;
+    background-color: #a4cf39;
+  }
+  .C_Svg svg {
+    align-self: center;
+  }
+
   .form_control {
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    border: 1px solid #a4cf39;
   }
   .C_btn {
-    background-color: #f96507;
+    background-color: #a4cf39;
     width: 100%;
     margin-top: 0;
   }
