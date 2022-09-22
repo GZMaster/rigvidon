@@ -33,8 +33,12 @@ const Services = () => {
       <div className="S_Wrapper">
         <div className="S_Left">
           <div className="S_title">
-            <h2>WHAT WE DO</h2>
-            <h1>WE PROVIDE A BARRAGE OF ENERGY RELATED SERVICES</h1>
+            <div className="S_textHeader">WHAT WE DO</div>
+            <h3>WE PROVIDE A BARRAGE OF 
+            <span className="S_Green">
+              ENERGY
+            </span>{" "}
+             RELATED SERVICES</h3>
             <p>Below are some benefits of working with us and the services we offer</p>
           </div>
           <div className="s_values">
