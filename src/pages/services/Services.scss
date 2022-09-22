@@ -23,7 +23,7 @@
   display: grid;
   gap: 8px;
 
-  > h2 {
+  .S_textHeader {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat';
@@ -38,7 +38,7 @@
     color: #000000;
   }
 
-  > h1 {
+  > h3 {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat';
@@ -48,6 +48,10 @@
     line-height: 44px;
 
     color: #000000;
+  }
+
+  .S_Green {
+    color: #a4cf39;
   }
 
   > p {
@@ -131,7 +135,7 @@
 .S_Right {
   display: flex;
   flex-direction: column;
-  width: 620px;
+  width: 40vw;
   scroll-snap-align: start;
   overflow-y: hidden;
 }
