@@ -41,7 +41,7 @@ const NavBar = () => {
             className={selectPage === "What we do" ? "links selected" : "links"}
             smooth={true}
             spy={true}
-            to="whatwedo"
+            to="services"
             offset={-80}
             onClick={() => setSelectPage("What we do")}
           >

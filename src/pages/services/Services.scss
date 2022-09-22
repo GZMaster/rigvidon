@@ -12,17 +12,130 @@
   margin: 0px 120px;
 }
 .S_Left {
-  flex: 1;
+  flex: 1 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.S_title {
+  display: grid;
+  gap: 8px;
+
+  .S_textHeader {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+    letter-spacing: 0.12em;
+
+    color: #000000;
+  }
+
+  > h3 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #000000;
+  }
+
+  .S_Green {
+    color: #a4cf39;
+  }
+
+  > p {
+    margin: 0;
+    padding: 2rem 0rem;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+
+    color: rgba(0, 0, 0, 0.75);
+  }
+
+}
+
+.s_values {
+  display: grid;
   gap: 10px;
+  margin: 0;
+  padding: 2rem 0rem;
+  padding-left: 2.5rem;
+  background-repeat: no-repeat;
+  background-size: 4px;
+  background-image: url("../../assets/images/Electric Circuitvalues.png");
+  background-position: left;
+
+  > div {
+    display: flex;
+    height: fit-content;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #A4CF39;
+  }
+
+  .values_icon {
+    height: 100%;
+    background: #A4CF39;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+
+    > img {
+      width: 34px;
+      height: 34px;
+    }
+  }
+
+  .values_text {
+    height: 100%;
+    
+    > h3 {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 1rem;
+      line-height: 140%;
+      color: #000000;
+      margin: 0;
+      padding: 0 1rem;
+    }
+
+    > p {
+      font-family: 'Montserrat';
+      font-style: normal; 
+      font-weight: 500;
+      font-size: 0.8rem;
+      line-height: 140%;
+      color: rgba(0, 0, 0, 0.7);
+      margin: 0;
+      padding: 0 1rem;
+
+    }
+  }
+
 }
 
 .S_Right {
   display: flex;
   flex-direction: column;
-  width: 620px;
+  width: 40vw;
   scroll-snap-align: start;
   overflow-y: hidden;
 }

@@ -8,11 +8,11 @@ const About = () => {
         <div className="A_Text_Wrap">
           <div className="A_Text_Title">WHO ARE WE</div>
           <h3 className="A_Text_Header">
-            <span>BRALE</span>
+            <span>A WORLD CLASS</span>
             <span className="A_Green">
-              WOOD Lorem ipsum dolor sit amet.
+             ENERGY COMPANY
             </span>{" "}
-            INVESTMENTS LTD
+             SET TO ATTEND TO ALL YOUR NEEDS
           </h3>
           <p>
             Rigvidon Energy is a global energy-based trading company that
