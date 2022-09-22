@@ -1,9 +1,9 @@
 import React from "react";
 import "./ReviewCard.scss";
 
-const ReviewCard = ({ items }) => {
+const ReviewCard = ({ items, classWrapper }) => {
   return (
-    <article className="Review_Container">
+    <article className={classWrapper ? classWrapper : "Review_Container"}>
       {items.map((item) => {
         const { image, name, review, id } = item;
         return (

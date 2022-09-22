@@ -30,12 +30,12 @@ const Review = () => {
       </h2>
 
 
-      <div className="servives_holder">
-            <button className="S_Left_Button" onClick={() => sideScroll(document.querySelector('.services_card'), 'left', 25, 250, 10)}><AiOutlineArrowLeft /></button>
-            <div className="services_card" id="services_card">
-              <ReviewCard items={data} />
+      <div className="review_holder">
+            <button className="R_Left_Button" onClick={() => sideScroll(document.querySelector('.review_card'), 'left', 25, 250, 10)}><AiOutlineArrowLeft /></button>
+            <div className="review_card" id="review_card">
+              <ReviewCard className="R_cards" items={data} />
             </div>
-            <button className="S_Right_Button" onClick={() => sideScroll(document.querySelector('.services_card'), 'right', 25, 230, 10)}><AiOutlineArrowRight /></button>
+            <button className="R_Right_Button" onClick={() => sideScroll(document.querySelector('.review_card'), 'right', 25, 230, 10)}><AiOutlineArrowRight /></button>
       </div>
       
     </section>
