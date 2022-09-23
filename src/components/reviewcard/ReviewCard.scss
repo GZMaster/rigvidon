@@ -1,0 +1,33 @@
+.Review_Container {
+  display: flex;
+  // overflow-x: scroll;
+  width: 40vw;
+}
+.Review_Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  // padding: 20px, 30px, 30px, 30px;
+  gap: 20px;
+  width: 60%;
+  height: 200px;
+  margin-right: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  
+}
+.Review_Top {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  > h6 {
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+
+  > p {
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+}

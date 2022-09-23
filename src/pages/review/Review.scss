@@ -1,0 +1,49 @@
+.Review {
+  background-image: url("../../assets/images/Compressed Review Section BG Image (1) (2) 1.png");
+  padding: 3rem;
+  background-repeat: no-repeat;
+
+  > h2 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+  }
+}
+
+.review_holder {
+  display: flex;
+  flex-direction: row;
+  width: 40vw;
+  height: 520px;
+  justify-content: center;
+  align-items: center;
+
+  .R_Left_Button {
+    border-style: none;
+    height: 24px;
+    outline: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .review_card {
+    width: 100%;
+    flex-direction: row;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+
+    .R_cards {
+      width: 100%;
+    }
+  }
+
+  .R_Right_Button {
+    border-style: none;
+    height: 24px;
+    outline: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}

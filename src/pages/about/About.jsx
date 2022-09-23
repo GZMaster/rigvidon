@@ -7,10 +7,13 @@ const About = () => {
       <div className="A_Wrapper">
         <div className="A_Text_Wrap">
           <div className="A_Text_Title">WHO ARE WE</div>
-          {/* <h3 className="A_Text_Header">
-            <span className="A_Orange">BRALE</span>
-            <span className="A_Blue">WOOD</span> INVESTMENTS LTD
-          </h3> */}
+          <h3 className="A_Text_Header">
+            <span>A WORLD CLASS</span>
+            <span className="A_Green">
+             ENERGY COMPANY
+            </span>{" "}
+             SET TO ATTEND TO ALL YOUR NEEDS
+          </h3>
           <p>
             Rigvidon Energy is a global energy-based trading company that
             specialises in both renewable and non-renewable energy. Some of our
@@ -20,7 +23,6 @@ const About = () => {
             provide unique services perfectly tailored to our customers
             requirements.
           </p>
-          <div className="A_Btn">Read More</div>
         </div>
         <div className="A_Image_Wrap">
           <img src={One} className="A_Image" alt={One} />

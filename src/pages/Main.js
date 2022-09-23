@@ -1,14 +1,18 @@
 import React from "react";
-import Hero from "./Hero/Hero";
-import About from "./About/About";
-import Services from "./Services/Services";
+import Home from "./home/Home";
+import About from "./about/About";
+import Services from "./services/Services";
+import Review from "./review/Review";
+import Contact from "./contact/Contact";
 
 const MainPage = () => {
   return (
     <div>
-      <Hero />
+      <Home />
       <About />
       <Services />
+      <Review></Review>
+      <Contact />
     </div>
   );
 };

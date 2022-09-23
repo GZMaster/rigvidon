@@ -8,6 +8,7 @@ const Card = ({ items, cardClassWrapper, cardClass }) => {
     <div className={cardClassWrapper ? cardClassWrapper : "Card_Wrapper"}>
       {items.map((cardData) => {
         const { image, title, text, id } = cardData;
+        console.log(image);
         return (
           <article className={cardClass ? cardClass : "Card"} key={id}>
             <div className="Card_Image">
@@ -17,8 +18,10 @@ const Card = ({ items, cardClassWrapper, cardClass }) => {
                 <img src={BlackImage} alt={"Black"} />
               )}
             </div>
-            <h6>{title}</h6>
-            <p>{text}</p>
+            <div className="Card_Details">
+              <h6>{title}</h6>
+              <p>{text}</p>
+            </div>
           </article>
         );
       })}
