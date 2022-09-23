@@ -1,4 +1,5 @@
 .Review {
+  height: 100vh;
   background-image: url("../../assets/images/Compressed Review Section BG Image (1) (2) 1.png");
   padding: 3rem;
   background-repeat: no-repeat;
@@ -14,10 +15,7 @@
 
 .review_holder {
   display: flex;
-  flex-direction: row;
-  width: 40vw;
-  height: 520px;
-  justify-content: center;
+  width: 45vw;
   align-items: center;
 
   .R_Left_Button {
@@ -34,8 +32,8 @@
     overflow: hidden;
     scroll-snap-type: x mandatory;
 
-    .R_cards {
-      width: 100%;
+    .R_container {
+      display: flex;
     }
   }
 
