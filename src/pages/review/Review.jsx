@@ -36,7 +36,6 @@ const Review = () => {
         What <span className="A_Green">Our Customers</span> say about us
       </h2>
 
-
       <div className="review_holder">
             <button className="R_Left_Button" onClick={prevReview}><AiOutlineArrowLeft /></button>
             <div className="review_card" id="review_card">
