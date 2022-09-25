@@ -12,7 +12,7 @@
   margin: 0px 120px;
 }
 .S_Left {
-  flex: 1 1;
+  // flex: 1 1;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -29,12 +29,9 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 140%;
-    /* or 22px */
-
     letter-spacing: 0.12em;
-
     color: #000000;
   }
 
@@ -44,9 +41,8 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 36px;
+    font-size: 2rem;
     line-height: 44px;
-
     color: #000000;
   }
 
@@ -60,11 +56,8 @@
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 140%;
-    /* or 22px */
-
-
     color: rgba(0, 0, 0, 0.75);
   }
 
@@ -111,10 +104,10 @@
       font-style: normal;
       font-weight: 600;
       font-size: 1rem;
-      line-height: 140%;
+      line-height: 1rem;
       color: #000000;
       margin: 0;
-      padding: 0 1rem;
+      padding-left: 1em;
     }
 
     > p {
@@ -122,10 +115,10 @@
       font-style: normal; 
       font-weight: 500;
       font-size: 0.8rem;
-      line-height: 140%;
+      line-height: 1rem;
       color: rgba(0, 0, 0, 0.7);
       margin: 0;
-      padding: 0 1rem;
+      padding-left: 1em;
 
     }
   }
@@ -189,6 +182,7 @@
   justify-content: center;
   align-content: center;
   align-self: center;
+  flex-direction: column;
 }
 .S_Top h2 {
   font-size: 38px;
@@ -223,6 +217,7 @@
   .S_Wrapper {
     margin: 0;
     padding: 2rem 1rem;
+    flex-direction: column;
   }
   .S_Top h2 {
     font-size: 2rem;
@@ -238,6 +233,10 @@
   .S_Wrapper {
     margin: 0;
     padding: 2rem 1rem;
+    flex-direction: column;
+  }
+  .S_Top {
+    flex-direction: column;
   }
   .S_Top h2 {
     font-size: 24px;
@@ -251,5 +250,8 @@
 
   .S_Container {
     height: fit-content;
+  }
+  .S_Right {
+    width: 100%;
   }
 }

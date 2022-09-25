@@ -62,16 +62,15 @@ const Services = () => {
         <div className="S_Right">
           <div className="S_Top">
             <h2>OUR SERVICES</h2>
+            <p className="S_Wrapper_Text">
+              Below are some of the services we offer to our clients
+            </p>
           </div>
-
-          <p className="S_Wrapper_Text">
-            Below are some of the services we offer to our clients
-          </p>
 
           <div className="servives_holder">
             <button className="S_Left_Button" onClick={() => sideScroll(document.querySelector('.services_card'), 'left', 25, 250, 10)}><AiOutlineArrowLeft /></button>
             <div className="services_card" id="services_card">
-              <Card className="cards" items={cardData} />
+              <Card viv items={cardData} />
             </div>
             <button className="S_Right_Button" onClick={() => sideScroll(document.querySelector('.services_card'), 'right', 25, 230, 10)}><AiOutlineArrowRight /></button>
           </div>

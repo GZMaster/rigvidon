@@ -3,19 +3,21 @@
   // overflow-x: scroll;
   width: 40vw;
 }
+
 .Review_Wrapper {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   // padding: 20px, 30px, 30px, 30px;
   gap: 20px;
-  width: 60%;
-  height: 200px;
+  width: fit-content;
+  // height: 200px;
   margin-right: 1rem;
   padding: 0.5rem 1rem;
   background-color: white;
   
 }
+
 .Review_Top {
   display: flex;
   gap: 20px;
@@ -25,9 +27,21 @@
     font-weight: 400;
     font-size: 1.1rem;
   }
+}
+
+.Review_Bottom {
+  width: 500px;
 
   > p {
     font-weight: 400;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+
 }
