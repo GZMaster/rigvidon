@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 import { Link } from "react-scroll";
+import { useNavigate } from "react-router-dom";
 import BurgerMenu from "../hamburger/BurgerMenu";
 import UseMediaQuery from "../mediaquery/UseMediaQuerry";
 import logo from "../../assets/images/Rigvigon Logo.png";
 import "./NavBar.scss";
 
 const NavBar = () => {
+  const navigate = useNavigate();
   const [selectPage, setSelectPage] = useState("Home");
   let isPageWide = UseMediaQuery("(min-width: 768px)");
+
+  const handleClick = (path) => {
+    navigate("/");
+    setSelectPage(path)
+  }
 
   return (
     <div className="nav__component">
@@ -23,7 +30,7 @@ const NavBar = () => {
             spy={true}
             to="home"
             offset={-80}
-            onClick={() => setSelectPage("Home")}
+            onClick={() => handleClick("Home")}
           >
             Home
           </Link>
@@ -33,7 +40,7 @@ const NavBar = () => {
             spy={true}
             to="about"
             offset={-80}
-            onClick={() => setSelectPage("About Us")}
+            onClick={() => handleClick("About Us")}
           >
             About Us
           </Link>
@@ -43,7 +50,7 @@ const NavBar = () => {
             spy={true}
             to="services"
             offset={-80}
-            onClick={() => setSelectPage("What we do")}
+            onClick={() => handleClick("What we do")}
           >
             What we do
           </Link>
@@ -58,7 +65,7 @@ const NavBar = () => {
             spy={true}
             to="contact"
             offset={-80}
-            onClick={() => setSelectPage("Contact Us")}
+            onClick={() => handleClick("Contact Us")}
           >
             Contact Us
           </Link>
