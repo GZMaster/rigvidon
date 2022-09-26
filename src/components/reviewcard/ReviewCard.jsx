@@ -3,6 +3,7 @@ import "./ReviewCard.scss";
 
 const ReviewCard = ({ items, classContainer, classWrapper  }) => {
   const { image, name, review, id } = items;
+  console.log(image)
 
   return (
     <article className={classContainer ? classContainer : "Review_Container"}> 

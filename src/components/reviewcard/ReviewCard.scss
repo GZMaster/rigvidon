@@ -43,5 +43,23 @@
 }
 
 @media screen and (max-width: 768px) {
+  .Review_Wrapper {
+    gap: 10px;
+  }
+  .Review_Top  {
+    width: fit-content;
+    gap: 10px;
+    
+    > h6 {
+      font-size: 0.8rem;
+    }
+  }
 
+  .Review_Bottom {
+    width: fit-content;
+
+    > p {
+      font-size: 0.8rem;
+    }
+  }
 }
