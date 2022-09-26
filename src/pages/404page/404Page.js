@@ -11,14 +11,22 @@ const _404Page = () => {
 
   return (
     <section className="_404_container">
-      <div className="_404_bgLeft" />
+      {isPageWide ? null : (
+        <div className="_404_bgLeft" />
+      )}
 
       <div className="_404_wrapper">
-        <div className="_404_title">404</div>
+        <div className="_404_title">
+          <h1>
+            404
+          </h1>
+        </div>
 
         <div className="_404_text">
-          Opps, Something went wrong!, it seems the page you are looking for is
-          currently under construction.
+          <p>
+            Opps, Something went wrong!, it seems the page you are looking for is
+            currently under construction.
+          </p>
         </div>
 
         {isPageWide ? (
@@ -64,7 +72,9 @@ const _404Page = () => {
         )}
       </div>
 
-      <div className="_404_bgRight" />
+      {isPageWide ? null : (
+        <div className="_404_bgRight" />
+      )}
     </section>
   );
 };

@@ -139,6 +139,7 @@
   height: 520px;
   justify-content: center;
   align-items: center;
+  scroll-snap-align: start;
 }
 
 .services_card {
@@ -255,6 +256,7 @@
     width: 100%;
   }
   .services_card {
-    overflow-x: scroll;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
   }
 }
