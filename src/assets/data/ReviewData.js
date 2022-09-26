@@ -5,7 +5,7 @@ import image3 from "../images/review profile2.png";
 const ReviewData = [
   {
     id: 1,
-    name: "Balogun Damola",
+    name: "Esther Oluwafemi",
     image: image1,
     review:
       "Taking a chance with Rigvidon was the best decision my company made this year, speedy delivery of all their services, projects being carried out with a high level of excellence and efficiency. There has never been a need to complain or worry. It was like we had found home.",
@@ -19,7 +19,7 @@ const ReviewData = [
   },
   {
     id: 3,
-    name: "Esther Oluwafemi",
+    name: "Balogun Damola",
     image: image3,
     review:
       "Rigvidon handles all the process engineering activities my company engages in. So far, we haven’t had any reason to complain",
