@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import UseMediaQuery from "../../components/mediaquery/UseMediaQuerry";
 import Card from "../../components/card/Card";
 import ServicesData from "../../assets/data/ServicesData";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
@@ -9,6 +10,7 @@ import "./Services.scss";
 const Services = () => {
   const [cardData] = useState(ServicesData);
   const [pageIndex, setPageIndex] = useState(0)
+  let isPageWide = UseMediaQuery("(max-width: 468px)");
 
   function sideScroll (element, direction, speed, distance, step) {
     let scrollAmount = 0;
@@ -34,7 +36,7 @@ const Services = () => {
         <div className="S_Left">
           <div className="S_title">
             <div className="S_textHeader">WHAT WE DO</div>
-            <h3>WE PROVIDE A BARRAGE OF 
+            <h3>WE PROVIDE A BARRAGE OF{" "}
             <span className="S_Green">
               ENERGY
             </span>{" "}
@@ -62,21 +64,25 @@ const Services = () => {
         <div className="S_Right">
           <div className="S_Top">
             <h2>OUR SERVICES</h2>
+            <p className="S_Wrapper_Text">
+              Below are some of the services we offer to our clients
+            </p>
           </div>
-
-          <p className="S_Wrapper_Text">
-            Below are some of the services we offer to our clients
-          </p>
 
           <div className="servives_holder">
-            <button className="S_Left_Button" onClick={() => sideScroll(document.querySelector('.services_card'), 'left', 25, 250, 10)}><AiOutlineArrowLeft /></button>
+            {isPageWide ? null : (
+              <button className="S_Left_Button" onClick={() => sideScroll(document.querySelector('.services_card'), 'left', 25, 250, 10)}><AiOutlineArrowLeft /></button>
+            )}
             <div className="services_card" id="services_card">
-              <Card className="cards" items={cardData} />
+              <Card viv items={cardData} />
             </div>
-            <button className="S_Right_Button" onClick={() => sideScroll(document.querySelector('.services_card'), 'right', 25, 230, 10)}><AiOutlineArrowRight /></button>
+            {isPageWide ? null : (
+              <button className="S_Right_Button" onClick={() => sideScroll(document.querySelector('.services_card'), 'right', 25, 230, 10)}><AiOutlineArrowRight /></button>
+            )}
           </div>
 
-          <div class="pagination">
+          {isPageWide ? null : (
+            <div class="pagination">
             <span class={pageIndex === 0 ? "active" : ""}></span>
             <span class={pageIndex === 1 ? "active" : ""}></span>
             <span class={pageIndex === 2 ? "active" : ""}></span>
@@ -84,6 +90,8 @@ const Services = () => {
             <span class={pageIndex === 4 ? "active" : ""}></span>
             <span class={pageIndex === 5 ? "active" : ""}></span>
           </div>
+          )}
+          
         </div>
       </div>
     </section>
