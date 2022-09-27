@@ -130,7 +130,15 @@
 }
 @media screen and (min-width: 769px) and (max-width: 1199px) {
   .C_Wrapper {
-    width: 90%;
+    width: 95%;
+    padding-right: 3rem;
+  }
+  .C_Text {
+    width: 80%;
+  }
+  .C_Info {
+    margin-right: 1rem;
+    padding: 8rem 4rem;
   }
 }
 @media screen and (max-width: 768px) {
