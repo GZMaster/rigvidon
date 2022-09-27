@@ -26,7 +26,7 @@
   .S_textHeader {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
@@ -38,7 +38,7 @@
   > h3 {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
     font-size: 2rem;
@@ -53,14 +53,13 @@
   > p {
     margin: 0;
     padding: 2rem 0rem;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
     font-size: 1rem;
     line-height: 140%;
     color: rgba(0, 0, 0, 0.75);
   }
-
 }
 
 .s_values {
@@ -79,12 +78,12 @@
     height: fit-content;
     align-items: center;
     justify-content: flex-start;
-    border: 1px solid #A4CF39;
+    border: 1px solid #a4cf39;
   }
 
   .values_icon {
     height: 100%;
-    background: #A4CF39;
+    background: #a4cf39;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -98,9 +97,9 @@
 
   .values_text {
     height: 100%;
-    
+
     > h3 {
-      font-family: 'Montserrat';
+      font-family: "Montserrat";
       font-style: normal;
       font-weight: 600;
       font-size: 1rem;
@@ -111,18 +110,16 @@
     }
 
     > p {
-      font-family: 'Montserrat';
-      font-style: normal; 
+      font-family: "Montserrat";
+      font-style: normal;
       font-weight: 500;
       font-size: 0.8rem;
       line-height: 1rem;
       color: rgba(0, 0, 0, 0.7);
       margin: 0;
       padding-left: 1em;
-
     }
   }
-
 }
 
 .S_Right {
@@ -133,7 +130,7 @@
   overflow-y: hidden;
 }
 
-.servives_holder{
+.servives_holder {
   display: flex;
   flex-direction: row;
   height: 520px;
@@ -156,16 +153,16 @@
   gap: 8px;
   margin-top: 8px;
 }
-.pagination span{
+.pagination span {
   display: inline-block;
   position: relative;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #CCCCCC;
+  background: #cccccc;
 }
-.pagination span.active{
-  background: #00A654;
+.pagination span.active {
+  background: #00a654;
 }
 .pagination span:before {
   content: "";
@@ -221,8 +218,18 @@
     flex-direction: column;
   }
   .S_Top h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 32px;
+  }
+  .S_title h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .s_values {
+    padding: 2rem 3rem;
+  }
+  .S_Right {
+    width: 100%;
   }
   .S_Wrapper_Text {
     width: 80%;
