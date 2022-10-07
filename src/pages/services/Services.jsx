@@ -82,13 +82,13 @@ const Services = () => {
           </div>
 
           {isPageWide ? null : (
-            <div class="pagination">
-            <span class={pageIndex === 0 ? "active" : ""}></span>
-            <span class={pageIndex === 1 ? "active" : ""}></span>
-            <span class={pageIndex === 2 ? "active" : ""}></span>
-            <span class={pageIndex === 3 ? "active" : ""}></span>
-            <span class={pageIndex === 4 ? "active" : ""}></span>
-            <span class={pageIndex === 5 ? "active" : ""}></span>
+            <div className="pagination">
+            <span className={pageIndex === 0 ? "active" : ""}></span>
+            <span className={pageIndex === 1 ? "active" : ""}></span>
+            <span className={pageIndex === 2 ? "active" : ""}></span>
+            <span className={pageIndex === 3 ? "active" : ""}></span>
+            <span className={pageIndex === 4 ? "active" : ""}></span>
+            <span className={pageIndex === 5 ? "active" : ""}></span>
           </div>
           )}
           
