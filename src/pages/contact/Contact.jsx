@@ -10,7 +10,7 @@ const Contact = () => {
     from_name: "",
     to_name: "Rigvidon",
     message: "",
-    reply_to: "retrodevstechnology@gmail.com",
+    reply_to: "rigvidenergyltd@gmail.com",
     from_email: "",
     subject: "",
   });
@@ -106,7 +106,7 @@ const Contact = () => {
                 <h3 className="C_item_title">
                   <span> Email Us</span>
                 </h3>
-                <h3 className="C_item-text">rigvidenergyltd@gmail.com.com</h3>
+                <h3 className="C_item-text">rigvidenergyltd@gmail.com</h3>
               </div>
             </div>
             <div className="C_item">
