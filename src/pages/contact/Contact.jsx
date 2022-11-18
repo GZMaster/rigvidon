@@ -53,7 +53,7 @@ const Contact = () => {
             <label className="form_label">Email</label>
             <input
               type="email"
-              placeholder="your email address"
+              placeholder="Your Email Address"
               name="from_email"
               value={toSend.from_email}
               className="form_control"
@@ -62,7 +62,7 @@ const Contact = () => {
             <label className="form_label">Subject</label>
             <input
               type="text"
-              placeholder="subject"
+              placeholder="Subject"
               name="subject"
               value={toSend.subject}
               className="form_control"
@@ -71,7 +71,7 @@ const Contact = () => {
             <label className="form_label">Message</label>
             <textarea
               name="message"
-              placeholder="Message"
+              placeholder="Your Message"
               type="text"
               cols="30"
               rows="10"
