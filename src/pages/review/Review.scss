@@ -1,9 +1,13 @@
 .Review {
   height: auto;
   background-image: url("../../assets/images/Compressed Review Section BG Image (1) (2) 1.png");
-  padding: 3rem;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover;  
+}
+
+.Review_wrapper {
+  padding: 4rem 0rem;
+  margin: 0px 120px;
 
   > h2 {
     color: white;

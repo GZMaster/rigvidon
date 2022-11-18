@@ -86,16 +86,13 @@ const Contact = () => {
           <div className="C_Info">
             <div className="C_item">
               <div className="C_Svg">
-                <MdLocationPin />
+                <MdPhoneInTalk />
               </div>
               <div className="C_item_Wrap">
                 <h3 className="C_item_title">
-                  <span>Our Address</span>
+                  <span>Our Phone number</span>
                 </h3>
-                <h3 className="C_item-text">
-                  7th floor CBC Towers, No 11 Olubunmi Owa Street, Lekki Phase
-                  1, Lagos
-                </h3>
+                <h3 className="C_item-text">0909 610 0225</h3>
               </div>
             </div>
             <div className="C_item">
@@ -104,20 +101,23 @@ const Contact = () => {
               </div>
               <div className="C_item_Wrap">
                 <h3 className="C_item_title">
-                  <span> Email Us</span>
+                  <span>Our Email Address</span>
                 </h3>
                 <h3 className="C_item-text">rigvidenergyltd@gmail.com</h3>
               </div>
             </div>
             <div className="C_item">
               <div className="C_Svg">
-                <MdPhoneInTalk />
+                <MdLocationPin />
               </div>
               <div className="C_item_Wrap">
                 <h3 className="C_item_title">
-                  <span>Call Us</span>
+                  <span>Our Location</span>
                 </h3>
-                <h3 className="C_item-text">0909 610 0225</h3>
+                <h3 className="C_item-text">
+                  7th floor CBC Towers, No 11 Olubunmi Owa Street, Lekki Phase
+                  1, Lagos
+                </h3>
               </div>
             </div>
           </div>
