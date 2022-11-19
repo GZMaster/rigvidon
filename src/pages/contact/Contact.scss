@@ -86,6 +86,14 @@
 .form_control:focus-within {
   outline: transparent;
 }
+.form_control::placeholder{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: rgba(0, 0, 21, 0.75);
+}
 .form_label {
   font-weight: 600;
   margin: 0.5rem 0;
