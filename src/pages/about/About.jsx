@@ -21,6 +21,15 @@ const About = () => {
 						provide unique services perfectly tailored to our customers
 						requirements.
 					</p>
+
+					<p>
+						Our Mission: At Rigvidon Energy Limited, our mission is to become a
+						globally recognized leader in the energy industry
+					</p>
+					<p>
+						Our Vision: We envision a future where renewable energy becomes the
+						dominant source of power
+					</p>
 				</div>
 				<div className="A_Image_Wrap">
 					<img src={One} className="A_Image" alt={One} />
